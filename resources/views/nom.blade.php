@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{route('wel')}}">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="{{route('wel')}}">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{route('nom')}}">nom</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{route('prenom')}}">prenom</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('age')}}">age</a>
-              </li>
-          </ul>
+    @extends('template.main')
+    @section('content')
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://static.lpnt.fr/images/2019/04/29/18633880lpw-18633909-article-zoo-beauval-animal-jpg_6166393_660x281.jpg" class="d-block w-100" alt="...">
         </div>
-      </nav>
-      
+        <div class="carousel-item">
+          <img src="https://file1.science-et-vie.com/var/scienceetvie/storage/images/1/0/9/109996/tigre-positif-covid-les-animaux-captivite-sont-aussi-une-source-epidemies-potentielles.jpg?alias=exact1024x768_l&size=x100&format=webp" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
       <div>
           <h1>Boss</h1>
 
       </div>
-    <script src="{{asset('js/app.js')}}"></script>
-</body>
-</html>
+@endsection
