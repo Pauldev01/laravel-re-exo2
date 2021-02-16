@@ -12,6 +12,5 @@
 </div>
       <div>
           <h1>Boss</h1>
-
       </div>
 @endsection
